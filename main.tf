@@ -1,12 +1,10 @@
 resource "aws_s3_bucket" "s3_bucket" {
-  bucket = "rocketseat-bucket-iac-${random_id.suffix.hex}"
+  bucket = "rocketseat-bucket-iac-${terraform.workspace}"
 
   tags = {
-    Name = "Bucket Rocketseat IAC"
+    Name = "Teste S3 Bucket"
     Iac = true
+    Context = "${terraform.workspace}"
   }
 }
 
-resource "random_id" "suffix" {
-  byte_length = 4
-}
