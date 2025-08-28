@@ -1,0 +1,36 @@
+# Arquivos locais de estado
+*.tfstate
+*.tfstate.*
+
+# Crash logs do Terraform
+crash.log
+crash.*.log
+
+# Planos temporários
+*.tfplan
+
+# Variáveis sensíveis locais
+*.tfvars
+*.tfvars.json
+
+# Override files locais (não versionar configs pessoais)
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Config do CLI Terraform
+.terraformrc
+terraform.rc
+
+# Pasta de cache do Terraform (plugins, modules baixados)
+.terraform/
+
+# Arquivos de backup gerados pelo Terraform
+*.backup
+
+# Mac/Linux/IDE lixo
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
